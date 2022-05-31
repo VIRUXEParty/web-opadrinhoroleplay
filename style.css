@@ -1,0 +1,35 @@
+:root {
+	--primary: #757575;
+  }
+
+body {
+	font-family: 'Merriweather', serif !important; 
+
+}
+
+#padrinho {
+	/* display: block;
+	margin: 0 auto; */
+	height: 4rem;
+}
+
+.logo {
+	height: 3rem;
+	border-radius: 50%;
+	margin: 0 1rem;
+}
+
+.hero {
+	background-color: #394046;
+	background-image: url("img/hero.webp");
+	background-position: center;
+	background-size: cover;
+}
+
+.hero header {
+	padding: 1rem 2.5rem;
+}
+
+#feeds {
+	margin-top: 0;
+}
