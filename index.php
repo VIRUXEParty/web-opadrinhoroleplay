@@ -14,13 +14,9 @@
 
 <body>
 	<div class="hero">
-		<nav class="container-fluid">
-			<ul>
-				<li><a href="./" class="contrast" onclick="event.preventDefault()"><img id="padrinho" src="img/padrinho.png"></a></li>
-			</ul>
-			<!-- <a href="https://www.guilded.gg/opadrinhoroleplay" data-tooltip="Entrar no servidor de Guilded" title="Entrar no servidor de Guilded" class="outline"><img id="guilded" src="img/guilded-logo.png" alt="Logo Guilded" class="logo">Servidor Guilded</a> -->
-		</nav>
+		<nav class="container-fluid"></nav>
 		<header class="container">
+			<img id="padrinho" src="img/padrinho.png" alt="">
 			<div class="headings">
 				<h1>O Padrinho Roleplay</h1>
 				<h2>Uma experiência de roleplay num ambiente mafioso...</h2>
@@ -29,7 +25,9 @@
 		</header>
 	</div>
 	<main class="container">
-		<h1>Acerca do Servidor</h1>
+		<h2>Bem-vindo!</h2>
+		<p>Olá! Como já deves ter adivinhado pelo nome, este servidor tem um modo de jogo de <i>Roleplay</i>, onde podes criar uma ou mais personagens fictícias e conviver com os restantes jogadores dentro do servidor e as suas personagens, ou seja uma segunda vida, mas online. </p>
+		<h3>História</h3>
 		<p>
 			Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas obcaecati magnam voluptates, sint consequatur a pariatur eum repudiandae sapiente, nisi laboriosam, blanditiis tempore quos iste ratione totam illum id debitis.
 		</p>
@@ -37,17 +35,20 @@
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum iusto provident magnam odio nesciunt vel commodi ducimus, at illo, similique culpa pariatur praesentium nihil placeat perspiciatis voluptates dignissimos, repellat ratione?
 		</p>
 
-		Progresso Geral do Servidor:<progress value="15" max="100"></progress>
+		<span>Progresso Geral do Servidor:</span><progress value="15" max="100"></progress>
 		<div id="feeds" class="grid">
 			<article>
 				<header><img id="twitter" src="img/twitter.png" class="logo">Feed to Twitter</header>
 			</article>
 			<article>
-				<header><img id="github" src="img/github.png" class="logo">Commits no GitHub</header>
+				<header><img id="github" src="img/github.png" class="logo">GitHub</header>
+			</article>
+			<article>
+				<header><img src="img/clickup.png" class="logo">Clickup</header>
 			</article>
 		</div>
 	</main>
-	<footer style="text-align: center;">
+	<footer>
 		<small><i>O Padrinho Roleplay 2022</i> - Todos os direitos reservados</small>
 	</footer>
 </body>
