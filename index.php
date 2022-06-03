@@ -14,18 +14,21 @@
 
 <body>
 	<div class="hero">
-		<nav class="container-fluid"></nav>
+		<nav class="container-fluid">
+			<ul>
+				<li>teste</li>
+				<li>teste</li>
+				<li>teste</li>
+				<li>teste</li>
+			</ul>
+		</nav>
 		<header class="container">
-			<img id="padrinho" src="img/padrinho.png" alt="">
-			<div class="headings">
-				<h1>O Padrinho Roleplay</h1>
-				<h2>Uma experiência de roleplay num ambiente mafioso...</h2>
-			</div>
-			<!-- <p><a href="#" role="button" onclick="event.preventDefault()">Call to action</a></p> -->
+			<img id="logo" src="img/logotext.png" alt="">
+			
 		</header>
 	</div>
 	<main class="container">
-		<h2>Bem-vindo!</h2>
+		<h2 style="text-align: center;">Bem-vindo!</h2>
 		<p>Olá! Como já deves ter adivinhado pelo nome, este servidor tem um modo de jogo de <i>Roleplay</i>, onde podes criar uma ou mais personagens fictícias e conviver com os restantes jogadores dentro do servidor e as suas personagens, ou seja uma segunda vida, mas online. </p>
 		<h3>História</h3>
 		<p>
@@ -48,8 +51,10 @@
 			</article>
 		</div>
 	</main>
-	<footer>
+	<footer class="container">
 		<small><i>O Padrinho Roleplay 2022</i> - Todos os direitos reservados</small>
+		<p><small><b>Grupo VIRUXEParty</b></small></p>
+		<span class="muted" style="float: right;">Criado por Flávio Pereira</span>
 	</footer>
 </body>
 

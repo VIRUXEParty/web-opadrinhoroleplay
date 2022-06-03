@@ -1,16 +1,44 @@
-:root {
-	--primary: #757575;
+/* Grey Light scheme (Default) */
+/* Can be forced with data-theme="light" */
+[data-theme="light"],
+:root:not([data-theme="dark"]) {
+  --primary: #757575;
+  --primary-hover: #616161;
+  --primary-focus: rgba(117, 117, 117, 0.125);
+  --primary-inverse: #FFF;
+}
+
+/* Grey Dark scheme (Auto) */
+/* Automatically enabled if user has Dark mode enabled */
+@media only screen and (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --primary: #757575;
+    --primary-hover: #9e9e9e;
+    --primary-focus: rgba(117, 117, 117, 0.25);
+    --primary-inverse: #FFF;
   }
+}
+
+/* Grey Dark scheme (Forced) */
+/* Enabled if forced with data-theme="dark" */
+[data-theme="dark"] {
+  --primary: #757575;
+  --primary-hover: #9e9e9e;
+  --primary-focus: rgba(117, 117, 117, 0.25);
+  --primary-inverse: #FFF;
+}
+
+/* Grey (Common styles) */
+:root {
+  --form-element-active-border-color: var(--primary);
+  --form-element-focus-color: var(--primary-focus);
+  --switch-color: var(--primary-inverse);
+  --switch-checked-background-color: var(--primary);
+}
 
 body {
 	font-family: 'Merriweather', serif !important; 
 
-}
-
-#padrinho {
-	/* display: block;
-	margin: 0 auto; */
-	height: 4rem;
 }
 
 .logo {
@@ -27,7 +55,7 @@ body {
 }
 
 .hero header {
-	padding: 1rem 2.5rem;
+	padding: 3rem 2.5rem;
 }
 
 #feeds {
