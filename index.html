@@ -33,9 +33,9 @@
 			Se não sabes o que é Roleplay... Basicamente é interpretar uma personagem fictícia, criada por ti, neste caso, num ambiente de jogo. Poderás então aqui criar as tuas personagens e conviver com os restantes jogadores e as suas personagens, dentro do servidor. Ou seja uma segunda vida, mas online.
 		</p>
 		<div id="guildedInvite">
-			<p>Junta-te a nossa comunidade no <em data-tooltip="Uma app tipo Discord, mas bem mais completa e com tudo gratuito!">Guilded</em>!</p>
+			<p>Junta-te a nossa comunidade no <em data-tooltip="Uma app tipo Discord, mas bem mais completa e com tudo gratuito!">Guilded</em>!<img id="copyGuildedLink" title="Copiar link do Guilded (Partilha com os teus amigos)" src="img/link.png" onclick="copyUrlToClipboard();"></p>
 			<a href="http://chat.opadrinhoroleplay.pt" class="contrast outline" role="button"><img src="img/guilded-logo.png">Entrar no Guilded</a>
-			<img id="copyGuildedLink" title="Copiar link do Guilded (Partilha com os teus amigos)" src="img/link.png" onclick="navigator.clipboard.writeText('http://chat.opadrinhoroleplay.pt'); alert('Link do Guilded copiado!');">
+			
 		</div>
 		<section id="features">
 			<div class="grid">
@@ -52,20 +52,36 @@
 						<h4>Roleplay Sério</h4>
 						
 					</header>
-					Presamos pela máxima qualidade no Roleplay.<br>
-					Todo o servidor é criado para que tenhas toda a informação disponíveis com o menor número de.
+					Presamos pela <b>máxima</b> qualidade no Roleplay.<br>
+					Todas as regras normais de Roleplay devem ser <ins>rigorosamente</ins> cumpridas por todos os jogadores. Temos varios sistemas para verificar que todas as regras são cumpridas, para além da monitorização constante pela nossa equipa.
 				</article>
 				<article>
 					<header>
 						<img src="img/united.png">
 						<h4>Comunidade Amigável</h4>
 					</header>
+					Temos tolerãncia zero para qualquer tipo de <del>negatividade</del>!<br>
+					Toda a nossa equipa é amigável e não te julga de qualquer forma.<br>
+					Estamos todos aqui para passar um bom tempo.<br>
+					Qualquer jogador que tenha intenção clara de ser desagradável é removido de forma permanente do nosso servidor.
 				</article>
 			</div>
 			<div class="grid">
-				<article></article>
-				<article></article>
-				<article></article>
+				<article>
+					<header>
+						<img src="img/lightbulb.png">
+						<h4>Experiência Intuitiva</h4>
+					</header>
+					Todo o servidor é criado para que tenhas toda a informação disponível dentro do jogo, de uma forma intuitiva e prática de aceder.<br>
+				</article>
+				<article>
+					<header>
+						<img src="img/blogger.png">
+						<h4>Equipa Empenhada</h4>
+					</header>
+					Se mesmo depois de passares o exame de acesso ao servidor, continuares com dúvidas, terás sempre alguém para te ajudar a ter melhor experiência possível. O nosso sistema de tickets permite que os mesmos sejam atendidos por administradores que não se encontrem a jogar.	
+				</article>
+				<!-- <article></article> -->
 			</div>
 		</section>
 	</main>
@@ -74,5 +90,16 @@
 		<small><b>Grupo <a href="http://viruxe.party">VIRUXEParty</a></b></small>
 	</footer>
 </body>
+<script>
+	function copyUrlToClipboard()
+	{
+		navigator.permissions.query({name: "clipboard-write"}).then(result => {
+			if (result.state == "granted" || result.state == "prompt") {
+				navigator.clipboard.writeText("http://chat.opadrinhoroleplay.pt")
 
+				alert("Link copiado. Partilha com os teus amigos!")
+			}
+		});
+	}
+</script>
 </html>
