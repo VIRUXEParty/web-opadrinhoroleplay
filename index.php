@@ -1,3 +1,11 @@
+<?php
+include 'serverstatus.php';
+
+use EpEren\Fivem\ServerStatus;
+
+$server = ServerStatus::ServerBased("sv.opadrinhoroleplay.pt","30120");
+?>
+
 <!DOCTYPE html>
 <html lang="pt-pt" data-theme="dark">
 
@@ -27,6 +35,7 @@
 			<img id="logo" src="img/logotext.png">
 		</header>
 	</div>
+	<a style="position: absolute; top: 5px; right: 5px; text-align: center; font-size: small; color: <?= $server->IsOnline() === true ? 'green' : 'red'; ?>;" title="sv.opadrinhoroleplay.pt:30120" href="fivem://sv.opadrinhoroleplay.pt:30120"><?= $server->IsOnline() === true ? 'Servidor Online' : 'Servidor Offline'; ?></a>
 	<main class="container">
 		<p id="intro">
 			Olá! Como já deves ter adivinhado pelo nome, neste servidor poderás jogar <i>Roleplay</i>.<br>
@@ -35,7 +44,6 @@
 		<div id="guildedInvite">
 			<p>Junta-te a nossa comunidade no <em data-tooltip="Uma app tipo Discord, mas bem mais completa e com tudo gratuito!">Guilded</em>!<img id="copyGuildedLink" title="Copiar link do Guilded (Partilha com os teus amigos)" src="img/link.png" onclick="copyUrlToClipboard();"></p>
 			<a href="http://chat.opadrinhoroleplay.pt" class="contrast outline" role="button"><img src="img/guilded-logo.png">Entrar no Guilded</a>
-			
 		</div>
 		<section id="features">
 			<div class="grid">
