@@ -3,7 +3,7 @@ include 'serverstatus.php';
 
 use EpEren\Fivem\ServerStatus;
 
-$server = ServerStatus::ServerBased("sv.opadrinhoroleplay.pt","30120");
+$server = ServerStatus::FivemBased("8e4kdv");
 ?>
 
 <!DOCTYPE html>
